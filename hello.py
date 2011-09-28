@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, Response
 app = Flask(__name__)
 
-@app.route('/hello')
-def hello_world():
-    return 'Hello World!'
+@app.route('/')
+def home():
+    return Response 'Hello World!'
 
 if __name__ == '__main__':
     app.run()
